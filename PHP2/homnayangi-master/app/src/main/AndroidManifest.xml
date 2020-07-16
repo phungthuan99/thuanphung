@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="luongcongdu.blogspot.com.homnayangi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/YOUTUBE_API_KEY" />
+
+        <activity android:name=".View.activity.HomeActivity" />
+        <activity android:name=".View.activity.DetailsFoodActivity" />
+        <activity android:name=".View.activity.DetailArticleActivity" />
+        <activity android:name=".View.activity.ProfileActivity" />
+        <activity android:name=".View.activity.LoginActivity" />
+        <activity android:name=".View.activity.RegisterActivity" />
+        <activity android:name=".View.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.activity.AddRecipeActivity" />
+        <activity android:name=".View.activity.FBCommentActivity" />
+        <activity android:name=".View.activity.PlayVideoActivity" />
+        <activity android:name=".View.activity.ManageRecipeActivity"></activity>
+    </application>
+
+</manifest>

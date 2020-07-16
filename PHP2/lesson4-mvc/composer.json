@@ -1,0 +1,16 @@
+{
+    "name": "thuanpkph09011/lesson4-mvc",
+    "require": {
+        "phroute/phroute": "^2.1",
+        "illuminate/database" : "*",
+        "jenssegers/blade": "*"
+    },
+   	"autoload": {
+   		"psr-4": {
+
+   			"Controllers\\": "controllers/",
+   			"Models\\":"models/",
+        "Commons\\":"commons"
+		}
+	}
+}

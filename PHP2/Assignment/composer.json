@@ -1,0 +1,13 @@
+{
+    "name": "assignment/09011",
+    "require": {
+        "illuminate/database": "*",
+        "illuminate/events": "*",
+        "jenssegers/blade": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

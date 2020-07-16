@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="luongcongdu.blogspot.com.homnayangi.View.activity.DetailsFoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ct1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="Người đăng:"
+                    android:textColor="@color/text_focus"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới thiệu:"
+                android:textColor="@color/text_focus"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bánh quy chocolate giòn tan, thơm béo có thể bảo quản kín dùng dần trong thời gian dài. Với cách làm này bạn có thể thỏa thích làm ra nhiều mẻ bánh ngon lành cho cả nhà nhé!"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thời gian thực hiện: "
+                    android:textColor="@color/text_focus"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45 phút"
+                    android:textColor="@color/text_default"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyên liệu:"
+                android:textColor="@color/text_focus"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bột mì 300 gr Muối nở (Baking soda) 1/2 muỗng cà phê Muối 1/2 muỗng cà phê Bơ 170 gr Đường nâu 200 gr Đường trắng 100 gr Trứng gà 1 quả Lòng đỏ trứng gà 1 cái Tinh chất vani 2 muỗng cà phê Chocolate đen 250 gr"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cách làm:"
+                android:textColor="@color/text_focus"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bước 1 Mở trước lò nướng ở 170 độ C (325 độ F). Đặt giá ở giữa lò nếu là lò nhỏ, hoặc 1 giá phía trên (còn chừa 1 nấc trên cùng), 1 giá phía dưới (còn chừa 1 nấc dưới cùng) nếu là lò lớn. Lót giấy chống dính vào khay. Trộn đều 300g bột mì, 1/2 muỗng cà phê muối, 1/2 muỗng cà phê muối nở (baking soda). Để sang 1 bên. Dùng máy đánh đều 170g bơ mềm và 2 loại đường cho đến khi chúng thật hòa quyện. Cho tình chất vani và trứng vào (chia làm 2 lần), khuấy thật đều. Chế hỗn hợp bột vào, trộn thật đều (dùng máy thì đánh ở tốc độ thấp nhất khoảng 20 giây). Dùng phới trộn chocolate chip vào hỗn hợp. Bánh quy chocolate giòn tan"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Bình luận:"
+                android:textColor="@color/text_focus"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edt_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="9"
+                    android:inputType="textMultiLine"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/img_send_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_send_black_24dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
